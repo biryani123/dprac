@@ -1,5 +1,6 @@
 DBMS PRACTICALS (QUERIES)
 1) SQL STATEMENT 1-
+
 --prac1a
 
 select * from dept;
