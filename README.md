@@ -46,6 +46,7 @@ from emp inner join dept
 on emp.deptno = dept.deptno;
 
 Equi Join-
+
 select ename, empno, dname, sal
 
 from emp, dept
