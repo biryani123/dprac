@@ -64,3 +64,84 @@ select min(sal) from emp;
 
 select max(sal) from emp;
 
+--prac4a
+
+create table pp2(emp_no number(3) primary key, 
+
+emp_lname varchar(15), 
+
+emp_fname varchar(15) not null, 
+
+emp_sal number(5), 
+
+emp_hiredate date, 
+
+job_code number(3) default'501');
+
+insert into pp2 values(1,'Glasswala','Rehan',1000,'8-aug-2022','201');
+
+insert into pp2 values(2,'Patel','Saad',1000,'8-aug-2022','301');
+
+insert into pp2 values(3,'Pereira','Simeon',1000,'8-aug-2022','401');
+
+alter table pp2 add emp_mobile number(10);
+
+alter table pp2
+drop column emp_mobile
+
+select * from pp2;
+
+--prac4b
+
+create table pp2(emp_no number(3) primary key, 
+
+emp_lname varchar(15), 
+
+emp_fname varchar(15) not null, 
+
+emp_sal number(5), 
+
+emp_hiredate date, 
+
+job_code number(3) default'501');
+
+insert into pp2 values(1,'Glasswala','Rehan',1000,'8-aug-2022','201');
+
+insert into pp2 values(2,'Patel','Saad',1000,'8-aug-2022','301');
+
+select * from pp2;
+
+--prac3a
+
+create table student(rollno int, sname varchar(20), sclass varchar(10));
+
+insert into student values(1,'shweta','syit');
+
+insert into student values(2,'Rehan','syit');
+
+select * from pp2;
+
+--prac3b
+
+delete from student where rollno = 3;
+
+select * from student;
+
+--prac3c
+
+update student
+
+set class='tyit'
+
+where rollno=2;
+
+select * from student;
+
+
+
+
+
+
+
+
+
